@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Partida {
 
-	private String nombrejuego;
-	private Participante [] participantes;
-	private Participante ganador;
+	String nombrejuego;
+	Participante [] participantes;
+	Participante ganador;
 	
 	
 	
@@ -24,16 +24,14 @@ public class Partida {
 	}
 
 
-	
-	
 	private int  calculaJugadorGanador()
 	{
 		int puntosGanador = 0;
 		for (Participante p: this.participantes)
 		{
-			if(puntosGanador < p.getPuntuacion())
+			if(puntosGanador < p.puntuacion)
 			{
-				puntosGanador = p.getPuntuacion();
+				puntosGanador = p.puntuacion;
 			}
 		}
 		
@@ -46,9 +44,9 @@ public class Partida {
 		String nombreGanador;
 		for (Participante p: this.participantes)
 		{
-			if(puntosGanador == p.getPuntuacion())
+			if(puntosGanador == p.puntuacion)
 			{
-				nombreGanador = p.getNombre();
+				nombreGanador = p.nombre;
 				System.out.println(nombreGanador);
 			}
 		}
