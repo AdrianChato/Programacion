@@ -1,0 +1,33 @@
+package boletin2;
+
+public class NotaAsignatura {
+
+	String nombre;
+	int primT;
+	int segunT;
+	int tercerT;
+	
+	public NotaAsignatura(String nombre, int primT, int segunT, int tercerT) {
+		super();
+		this.nombre = nombre;
+		this.primT = primT;
+		this.segunT = segunT;
+		this.tercerT = tercerT;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "NotaAsignatura [nombre=" + nombre + ", primT=" + primT + ", segunT=" + segunT + ", tercerT=" + tercerT
+				+ "]";
+	}
+
+
+	public float calculaMedia() {
+		
+	}
+	
+	int Calculanumtrimestre () {
+		
+	}
+}

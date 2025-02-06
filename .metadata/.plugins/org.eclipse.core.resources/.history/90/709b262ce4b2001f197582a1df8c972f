@@ -1,0 +1,17 @@
+package unidad2.boletin1;
+
+import java.util.Scanner;
+
+
+public class Arbol {
+
+	public static void main(String[] args) {
+		String cadena = " ";
+		for (int i = 1; i<= 4; i++) {
+			cadena = cadena + "*" + cadena;
+			System.out.println(cadena);
+		}
+
+	}
+
+}

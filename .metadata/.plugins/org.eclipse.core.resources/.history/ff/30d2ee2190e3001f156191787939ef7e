@@ -1,0 +1,11 @@
+package boletin3;
+
+public class GestionaVehiculos {
+
+	public static void main(String[] args) {
+		Vehiculo coche = new Vehiculo("Renault","Clio", 2015, "gasolina", 50,50,6.2F);
+		Vehiculo coche2 = new Vehiculo("Renault","Clio", 2015, "gasolina", 50,50,6.2F);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package boletin2;
+
+public class GestionaAlumno {
+
+	public static void main(String[] args) {
+		NotaAsignatura notabaseLucia = new NotaAsignatura ("Base", 6,7,8);
+		NotaAsignatura notaprogLucia = new NotaAsignatura ("programacion", 9,4,7);
+		Alumno lucia = new Alumno("lucia", "lucia@gmail.com");
+		lucia.notaBase = notabaseLucia;
+		lucia.notaProg = notaprogLucia;
+		System.out.println(lucia);
+	}
+
+}
