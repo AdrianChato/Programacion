@@ -20,12 +20,6 @@ public class Ejercicio1 {
 
 		System.out.print("Dime el primer número para sumur sus cifras: ");
 
-		
-		
-		
-		
-		
-		
 		String num1 = sc.next();
 
 		System.out.print("Dime el segundo número: ");
