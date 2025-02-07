@@ -1,0 +1,51 @@
+package boletin3.ejercicio3;
+
+public class CuentaBancaria {
+
+	private double saldo;
+	private String numCuenta;
+	private Persona titular;
+	private Persona autorizado;
+	
+	public CuentaBancaria(double saldo, String numCuenta, Persona titular) {
+		super();
+		this.saldo = saldo;
+		this.numCuenta = numCuenta;
+		this.titular = titular;
+		//this.autorizado = null;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public String getNumCuenta() {
+		return numCuenta;
+	}
+
+	public void setNumCuenta(String numCuenta) {
+		this.numCuenta = numCuenta;
+	}
+
+	public Persona getTitular() {
+		return titular;
+	}
+
+	public void setTitular(Persona titular) {
+		this.titular = titular;
+	}
+
+	public Persona getAutorizado() {
+		return autorizado;
+	}
+
+	public void setAutorizado(Persona autorizado) {
+		this.autorizado = autorizado;
+	}
+	
+	
+}
