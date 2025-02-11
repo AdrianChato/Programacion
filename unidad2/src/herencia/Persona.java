@@ -1,0 +1,43 @@
+package herencia;
+
+public class Persona {
+
+	protected String nombre;
+	protected String apellidos;
+	protected String dni;
+	
+	public Persona(String nombre, String apellidos, String dni) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.dni = dni;
+	}
+
+	protected String getNombre() {
+		return nombre;
+	}
+
+	protected void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	protected String getApellidos() {
+		return apellidos;
+	}
+
+	protected void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	protected String getDni() {
+		return dni;
+	}
+
+	protected void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	
+	
+	
+}

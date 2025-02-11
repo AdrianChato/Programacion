@@ -1,0 +1,21 @@
+package herencia;
+
+public class Profesor extends Persona {
+
+	protected String departamento;
+
+	public Profesor(String nombre, String apellidos, String dni, String departamento) {
+		super(nombre, apellidos, dni);
+		this.departamento = departamento;
+	}
+
+	public String getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+	
+	
+}

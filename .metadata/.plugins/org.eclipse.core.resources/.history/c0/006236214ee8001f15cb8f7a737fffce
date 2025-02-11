@@ -1,0 +1,12 @@
+package boletin4;
+
+public class GestionaVehiculos {
+
+	public static void main(String[] args) {
+		
+		Automovil c1 = new Automovil("Pepe",5,5,"A");
+		Vehiculo c2 = new Automovil ("Pepa", 5,4,"B");
+		
+	}
+
+}
