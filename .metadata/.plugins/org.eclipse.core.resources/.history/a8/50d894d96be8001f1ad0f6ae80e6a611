@@ -18,7 +18,7 @@ public class ejercicio1 {
 	int letradni (Scanner input) {
 	System.out.println("Dime los números de un dni: ");
 	int dni = input.nextInt();
-	int letra = (dni)%23;
+	int letra = (dni)/23;
 	return letra;
 
 }
