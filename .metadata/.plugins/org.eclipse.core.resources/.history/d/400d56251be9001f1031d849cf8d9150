@@ -1,0 +1,20 @@
+package presentacion;
+
+public class GestionaPersona {
+
+	public static void main(String[] args) {
+		Persona p = new Persona("Pepe", "Ortiz", 32, 1500);
+		Persona p1 = new Entrenador("Juanka", "viejudo", 37, 1800);
+		Entrenador e = new Entrenador("dios", "joven", 19, 1750);
+		
+		e.concentrarse();
+		p1.concentrarse();
+		p.concentrarse();
+		
+		e.viajar("Londres");
+		p1.viajar("Paris");
+		p.viajar("Mexico");
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package presentacion;
+
+public class GestionaPersona {
+
+	public static void main(String[] args) {
+		Persona p = new Persona("Pepe", "Ortiz", 32, 1500);
+		Persona p1 = new Persona("Juanka", "viejudo", 37, 1800);
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package presentacion;
+
+import java.util.Objects;
+
+public class Entrenador extends Persona{
+
+	private String idfederacion;
+
+	public Entrenador(String nombre, String apellidos, int edad, float salario, String idfederacion) {
+		super(nombre, apellidos, edad, salario);
+		this.idfederacion = idfederacion;
+	}
+
+
+	protected String getIdfederacion() {
+		return idfederacion;
+	}
+
+	protected void setIdfederacion(String idfederacion) {
+		this.idfederacion = idfederacion;
+	}
+
+
+	public Entrenador(String nombre, String apellidos, int edad, float salario) {
+		super(nombre, apellidos, edad, salario);
+		this.idfederacion = "ESP";
+	}
+
+
+	@Override
+	public String toString() {
+		return "Entrenador [idfederacion=" + idfederacion + ", toString()=" + super.toString() + ", getNombre()="
+				+ getNombre() + ", getApellidos()=" + getApellidos() + ", getEdad()=" + getEdad() + ", getSalario()="
+				+ getSalario() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass() + "]";
+	}
+
+
+	
+
+	
+	
+	
+}

@@ -2,7 +2,7 @@ package herencia;
 
 public class Profesor extends Persona {
 
-	protected String departamento;
+	private String departamento;
 
 	public Profesor(String nombre, String apellidos, String dni, String departamento) {
 		super(nombre, apellidos, dni);
