@@ -77,7 +77,4 @@ public class Personaje {
 		return true;
 	}
 	
-	boolean esAtacado (Personaje p,int distancia) {
-		return true;
-	}
 }
