@@ -1,8 +1,0 @@
-package boletin4;
-
-public class CocheElectrico extends Automovil {
-
-	private String tipoBateria;
-	
-	
-}

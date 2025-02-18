@@ -1,0 +1,6 @@
+package TareaEvaluable;
+
+public class Administrativo extends Empleado{
+
+	
+}

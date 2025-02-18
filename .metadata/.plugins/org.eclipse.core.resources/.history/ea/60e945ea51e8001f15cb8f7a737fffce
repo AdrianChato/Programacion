@@ -1,8 +1,0 @@
-package herencia;
-
-import java.time.LocalDate;
-
-public class ProfesorInterino extends Profesor{
-
-	private LocalDate fechafincontrato;
-}

@@ -1,0 +1,13 @@
+package TareaEvaluable;
+
+public final class Directivo extends Empleado{
+
+	private int bonificacion;
+
+	public Directivo(String nombre, String dni, int salariobase, int bonificacion) {
+		super(nombre, dni, salariobase);
+		this.bonificacion = bonificacion;
+	}
+	
+	
+}
