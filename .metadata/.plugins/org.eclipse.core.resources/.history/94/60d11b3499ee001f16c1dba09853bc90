@@ -1,0 +1,67 @@
+package Simulacro2;
+
+import java.util.Objects;
+
+public class Equipos {
+
+	private String nombre;
+	private String mac;
+	private String sistemaoperativo;
+	
+	public Equipos(String nombre, String mac, String sistemaoperativo) {
+		super();
+		this.nombre = nombre;
+		this.mac = mac;
+		this.sistemaoperativo = sistemaoperativo;
+	}
+
+	protected String getNombre() {
+		return nombre;
+	}
+
+	protected void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	protected String getMac() {
+		return mac;
+	}
+
+	protected void setMac(String mac) {
+		this.mac = mac;
+	}
+
+	protected String getSistemaoperativo() {
+		return sistemaoperativo;
+	}
+
+	protected void setSistemaoperativo(String sistemaoperativo) {
+		this.sistemaoperativo = sistemaoperativo;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(mac, nombre, sistemaoperativo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Equipos other = (Equipos) obj;
+		return Objects.equals(mac, other.mac) && Objects.equals(nombre, other.nombre)
+				&& Objects.equals(sistemaoperativo, other.sistemaoperativo);
+	}
+
+	@Override
+	public String toString() {
+		return "Equipos [nombre=" + nombre + ", mac=" + mac + ", sistemaoperativo=" + sistemaoperativo + "]";
+	}
+	
+	
+	
+}

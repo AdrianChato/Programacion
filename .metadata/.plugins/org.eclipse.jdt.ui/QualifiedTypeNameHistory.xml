@@ -7,6 +7,7 @@
     <fullyQualifiedTypeName name="boletin3.ejercicio3.Persona"/>
     <fullyQualifiedTypeName name="boletin3.ejercicio3.CuentaBancaria"/>
     <fullyQualifiedTypeName name="herencia.ProfesorInterino"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="TareaEvaluable.Administrativo"/>
+    <fullyQualifiedTypeName name="EjemploEnum.Ejemplo"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>
