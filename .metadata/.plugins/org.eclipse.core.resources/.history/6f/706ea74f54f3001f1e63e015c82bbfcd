@@ -1,0 +1,24 @@
+package modelo;
+
+public class Circulo {
+
+	private double radio;
+	public final static double PI = 3.141621;
+
+	public Circulo(double radio) {
+		super();
+		this.radio = radio;
+	}
+
+	protected double getRadio() {
+		return radio;
+	}
+
+	protected void setRadio(double radio) {
+		this.radio = radio;
+	}
+	
+	public double calculaarea() {
+		return PI*this.radio*this.radio;
+	}
+}

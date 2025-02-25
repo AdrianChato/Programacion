@@ -1,0 +1,13 @@
+package controlador;
+
+import modelo.Circulo;
+
+public class GestionaCirculo {
+
+	public static void main(String[] args) {
+		
+		Circulo c1 = new Circulo(3);
+
+	}
+
+}

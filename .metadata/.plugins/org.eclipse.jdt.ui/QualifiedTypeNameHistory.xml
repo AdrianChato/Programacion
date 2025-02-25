@@ -10,4 +10,11 @@
     <fullyQualifiedTypeName name="TareaEvaluable.Administrativo"/>
     <fullyQualifiedTypeName name="EjemploEnum.Ejemplo"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="Solis_Adrian_Examen2.Smartphone"/>
+    <fullyQualifiedTypeName name="Solis_Adrian_Examen2.Laptop"/>
+    <fullyQualifiedTypeName name="Solis_Adrian_Examen2.PCSobremesa"/>
+    <fullyQualifiedTypeName name="Solis_Adrian_Examen2.Dispositivo"/>
+    <fullyQualifiedTypeName name="ejemplos.Persona"/>
+    <fullyQualifiedTypeName name="controlador.GestionaPersona"/>
+    <fullyQualifiedTypeName name="modelo.Circulo"/>
 </qualifiedTypeNameHistroy>

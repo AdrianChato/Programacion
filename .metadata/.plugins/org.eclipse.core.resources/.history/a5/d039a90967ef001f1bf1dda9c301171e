@@ -1,0 +1,20 @@
+package Solis_Adrian_Examen2;
+
+public class GestionDispositivos {
+
+	public static void main(String[] args) {
+		
+		Smartphone e1 = new Smartphone("Samsung", "Galaxy", 800, false, 2);
+		Laptop e2 = new Laptop("HP", "XXX", 1000, 32, 2.1);
+		PCSobremesa e3 = new PCSobremesa("NVIDIA", "CJSD", 2000, 64, false);
+		
+		Smartphone e4 = (Smartphone) new Dispositivo ("SAMSUNG", "NOTE", 890);
+		Laptop e5 = (Laptop) new Dispositivo("HP", "odhnpoi", 560);
+		PCSobremesa e6 = (PCSobremesa) new Dispositivo("bicicleta", "monti", 1200);
+		
+		
+		e1 = (Smartphone) e1;
+		System.out.println(e1.toString());
+	}
+
+}

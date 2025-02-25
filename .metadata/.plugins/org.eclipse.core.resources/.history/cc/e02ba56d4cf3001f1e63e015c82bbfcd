@@ -1,0 +1,14 @@
+package ejemplos;
+
+public class GestionaPersona {
+
+	public static void main(String[] args) {
+		Persona p1 = new Persona( "Pepe", 30);
+		System.out.println(p1);
+		
+		Persona p2 = new Persona("Pepa", 10);
+		System.out.println(p2);
+
+	}
+
+}
