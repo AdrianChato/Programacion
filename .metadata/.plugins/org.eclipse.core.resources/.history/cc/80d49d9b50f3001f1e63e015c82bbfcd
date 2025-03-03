@@ -1,0 +1,29 @@
+package ejemplos;
+
+import java.util.Scanner;
+
+import modelo.Persona;
+
+public class GestionaPersona {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Dame una cadena: ");
+		String dni = input.nextLine();
+		
+		while (!dni.equals("fin")) {
+			if (Persona.validasiDNIValido(dni)) {
+				Persona p1 = new Persona(dni, 0);
+				System.out.println("DNI valido");
+			} else {
+				System.out.println("No valido");
+			}
+			System.out.println("INtroduce de nuevo la cadena: ");
+			dni = input.nextLine();
+		}
+		
+
+	}
+
+}

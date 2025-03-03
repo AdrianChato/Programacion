@@ -1,0 +1,9 @@
+package ejemplos;
+
+public class Persona {
+
+	int contador;
+	int identificador;
+	String nombre;
+	int edad;
+}

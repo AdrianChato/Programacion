@@ -1,5 +1,6 @@
 package modelo;
 
+<<<<<<< HEAD
 import java.time.LocalDate;
 
 public class CuentaBancaria {
@@ -35,4 +36,8 @@ public class CuentaBancaria {
 		this.ClienteAutorizado = clienteAutorizado;
 		contador = contador+1;
 	}
+=======
+public class CuentaBancaria {
+
+>>>>>>> 2d4735a8953b25f0c26a1181fb5898db1ba34db9
 }

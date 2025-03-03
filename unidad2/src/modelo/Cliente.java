@@ -1,6 +1,7 @@
 package modelo;
 
 public class Cliente {
+<<<<<<< HEAD
 	private String nombre;
 	private String apellidos;
 	private String DNI;
@@ -16,4 +17,7 @@ public class Cliente {
 		this.apellidos = apellidos;
 		DNI = dNI;
 	}
+=======
+
+>>>>>>> 2d4735a8953b25f0c26a1181fb5898db1ba34db9
 }

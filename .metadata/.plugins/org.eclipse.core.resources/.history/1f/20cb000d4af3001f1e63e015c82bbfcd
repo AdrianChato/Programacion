@@ -1,0 +1,15 @@
+package ejemplos;
+
+public class GestionaPersona {
+
+	public static void main(String[] args) {
+		int contador = 0;
+		Persona p1 = new Persona(contador, "Pepe", 30);
+		System.out.println(p1);
+		contador=contador+1;
+		Persona p2 = new Persona(contador, "Pepa", 10);
+		System.out.println(p2);
+		contador=contador+1;
+	}
+
+}
