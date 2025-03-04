@@ -1,0 +1,5 @@
+package modelo.boletin1abstract;
+
+public abstract class Aves {
+
+}

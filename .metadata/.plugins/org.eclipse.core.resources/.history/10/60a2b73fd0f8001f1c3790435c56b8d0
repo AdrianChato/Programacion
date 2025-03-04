@@ -1,0 +1,16 @@
+package controlador;
+
+import modelo.Circunferencia;
+import modelo.Triangulo;
+import modelo.Figura;
+
+public class GestionaFiguras {
+
+	public static void main(String[] args) {
+		
+		Figura a = new Triangulo();
+		Figura a2 = new Circunferencia();
+
+	}
+
+}

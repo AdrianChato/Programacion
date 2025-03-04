@@ -1,0 +1,16 @@
+package modelo;
+
+public class Triangulo extends Figura{
+
+	public Triangulo(String color) {
+		super(color);
+		
+	}
+
+	@Override
+	public double calcularArea() {
+		return 0;
+	}
+
+	
+}

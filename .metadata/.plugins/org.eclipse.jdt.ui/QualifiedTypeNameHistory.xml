@@ -17,4 +17,10 @@
     <fullyQualifiedTypeName name="ejemplos.Persona"/>
     <fullyQualifiedTypeName name="controlador.GestionaPersona"/>
     <fullyQualifiedTypeName name="modelo.Circulo"/>
+    <fullyQualifiedTypeName name="modelo.Animal"/>
+    <fullyQualifiedTypeName name="modelo.Gato"/>
+    <fullyQualifiedTypeName name="modelo.Perro"/>
+    <fullyQualifiedTypeName name="modelo.Circunferencia"/>
+    <fullyQualifiedTypeName name="modelo.Triangulo"/>
+    <fullyQualifiedTypeName name="modelo.Figura"/>
 </qualifiedTypeNameHistroy>

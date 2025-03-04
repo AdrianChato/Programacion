@@ -1,0 +1,11 @@
+package modelo;
+
+public class Animal {
+
+	public String getSonidoqueemite() {
+		return "";
+	}
+	public String getAlimento () {
+		return "";
+	}
+}

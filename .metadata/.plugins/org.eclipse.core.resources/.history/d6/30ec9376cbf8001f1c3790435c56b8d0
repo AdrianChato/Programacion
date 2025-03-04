@@ -1,0 +1,15 @@
+package controlador;
+
+import modelo.Animal;
+import modelo.Gato;
+import modelo.Perro;
+
+public class GestionaAnimales {
+
+	public static void main(String[] args) {
+		Animal p = new Perro();
+		Animal p2 = new Gato();
+		
+	}
+
+}
