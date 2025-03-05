@@ -79,6 +79,7 @@ public abstract class Mascotas {
 
 	@Override
 	public boolean equals(Object obj) {
+		this.getClass().getName();
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -86,8 +87,7 @@ public abstract class Mascotas {
 		if (getClass() != obj.getClass())
 			return false;
 		Mascotas other = (Mascotas) obj;
-		return edad == other.edad && Objects.equals(estado, other.estado)
-				&&  Objects.equals(nombre, other.nombre);
+		return edad == other.edad &&  Objects.equals(nombre, other.nombre);
 	}
 
 

@@ -1,0 +1,25 @@
+package modelo;
+
+public class RobotsPintor extends Robots{
+	
+	
+
+	public RobotsPintor(int id, String modelo, int bateria, String combustible, String descripcion, Estado estadorobots,
+			String nombre) {
+		super(id, modelo, bateria, combustible, descripcion, estadorobots, nombre);
+	}
+
+	@Override
+	public String ejecutartarea() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean recargar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+}
