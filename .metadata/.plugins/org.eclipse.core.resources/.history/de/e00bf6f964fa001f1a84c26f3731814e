@@ -1,0 +1,5 @@
+package modelo.BoletinInterfaces;
+
+public abstract class Animal {
+
+}
