@@ -62,6 +62,6 @@ public abstract class Animal {
 	abstract boolean huir (Animal a);
 	
 	public enum Familia {
-		RAPAZ,LEON,ROEDOR,SERPIENTEl
+		RAPAZ,LEON,ROEDOR,SERPIENTE
 	}
 }
