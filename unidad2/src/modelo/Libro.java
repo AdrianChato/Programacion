@@ -5,14 +5,14 @@ public class Libro extends Recursos{
 	private String autor;
 	private String editorial;
 	private String generoliterario;
-	private int diasprestamo = 21;
+	private int diasprestamo;
 	
-	public Libro(int id, String ubicacion, String autor, String editorial, String generoliterario, int diasprestamo) {
+	public Libro(int id, String ubicacion, String autor, String editorial, String generoliterario) {
 		super(id, ubicacion);
 		this.autor = autor;
 		this.editorial = editorial;
 		this.generoliterario = generoliterario;
-		this.diasprestamo = diasprestamo;
+		this.diasprestamo = 21;
 	}
 
 	public String getAutor() {
@@ -55,8 +55,7 @@ public class Libro extends Recursos{
 
 	@Override
 	public int getDevuelveDiasPrestamo() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getDiasprestamo();
 	}
 	
 	

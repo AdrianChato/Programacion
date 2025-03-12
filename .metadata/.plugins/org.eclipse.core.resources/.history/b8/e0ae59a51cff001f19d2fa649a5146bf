@@ -1,0 +1,13 @@
+package modelo;
+
+public class Estudiante extends PersonaRefactoriza implements IAccion {
+
+
+	@Override
+	public String ejecutaAccion() {
+		return System.out.println("Estudio");
+		
+	}
+	
+	
+}	

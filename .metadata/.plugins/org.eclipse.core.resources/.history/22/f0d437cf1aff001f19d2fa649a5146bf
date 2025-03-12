@@ -1,0 +1,10 @@
+package modelo;
+
+public class Estudiante implements IAccion {
+
+	@Override
+	public void ejecutaAccion() {
+		System.out.println("Estudio");
+		
+	}
+}	

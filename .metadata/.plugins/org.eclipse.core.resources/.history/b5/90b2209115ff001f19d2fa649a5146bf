@@ -1,0 +1,10 @@
+package modelo;
+
+public class PersonaRefactoriza {
+
+	String nombre;
+
+	public void identificarse() {
+		System.out.println("Soy una persona y me llamo " + nombre);
+	}
+}

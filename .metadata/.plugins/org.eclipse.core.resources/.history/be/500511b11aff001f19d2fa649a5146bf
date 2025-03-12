@@ -1,0 +1,19 @@
+package modelo;
+
+public class PersonaRefactoriza {
+
+	String nombre;
+	
+	
+
+	public PersonaRefactoriza(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+
+
+
+	public void identificarse() {
+		System.out.println("Soy una persona y me llamo " + nombre);
+	}
+}

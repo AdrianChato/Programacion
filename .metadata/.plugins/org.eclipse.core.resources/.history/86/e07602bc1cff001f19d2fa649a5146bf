@@ -1,0 +1,15 @@
+package modelo;
+
+class Empleado extends PersonaRefactoriza implements IAccion {
+
+	public Empleado(String nombre) {
+		super(nombre);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void ejecutaAccion() {
+System.out.println("Trabaja");		
+	}
+	
+}
