@@ -26,4 +26,7 @@
     <fullyQualifiedTypeName name="modelo.Gato"/>
     <fullyQualifiedTypeName name="modelo.BoletinInterfaces.Serpiente"/>
     <fullyQualifiedTypeName name="modelo.BoletinInterfaces.Roedor"/>
+    <fullyQualifiedTypeName name="modelo.IAccion"/>
+    <fullyQualifiedTypeName name="modelo.PersonaRefactoriza"/>
+    <fullyQualifiedTypeName name="modelo.EstudianteEmpleado"/>
 </qualifiedTypeNameHistroy>
