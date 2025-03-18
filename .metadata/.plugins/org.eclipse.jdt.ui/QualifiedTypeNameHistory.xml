@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="boletin3.ejercicio3.Persona"/>
     <fullyQualifiedTypeName name="boletin3.ejercicio3.CuentaBancaria"/>
@@ -29,4 +27,13 @@
     <fullyQualifiedTypeName name="modelo.IAccion"/>
     <fullyQualifiedTypeName name="modelo.PersonaRefactoriza"/>
     <fullyQualifiedTypeName name="modelo.EstudianteEmpleado"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="exception.AdrianExcepcion"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="exception.Gestionaexcepcionesejercicio5"/>
 </qualifiedTypeNameHistroy>
