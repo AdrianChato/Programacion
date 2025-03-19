@@ -1,0 +1,42 @@
+package simulacroexamen1;
+
+public class Alquiler extends Vehiculo{
+
+	private int id;
+	private Vehiculo datos;
+	private String carnet;
+	private String dni;
+	private int numDias;
+	private EstadoCoche estado;
+	
+	public Alquiler(int identificador, Alquiler[] alquileres, boolean disponible, int id, Vehiculo datos, String carnet,
+			String dni, int numDias, EstadoCoche estado) {
+		super(identificador, alquileres, disponible);
+		this.id = id;
+		this.datos = datos;
+		this.carnet = carnet;
+		this.dni = dni;
+		this.numDias = numDias;
+		this.estado = estado;
+	}
+
+	@Override
+	public boolean estaAlquilado() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public double getPrecioDia() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getImporteTotal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+package simulacroexamen1;
+
+public class Alquiler extends Vehiculo{
+
+	private int id;
+	private Vehiculo datos;
+	private String carnet;
+	private String dni;
+	private int numDias;
+	private EstadoCoche estado;
+	
+	
+}
