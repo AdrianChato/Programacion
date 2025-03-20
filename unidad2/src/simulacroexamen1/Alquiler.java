@@ -1,5 +1,6 @@
 package simulacroexamen1;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Alquiler extends Vehiculo {
@@ -11,9 +12,9 @@ public class Alquiler extends Vehiculo {
 	private int numDias;
 	private EstadoCoche estado;
 
-	public Alquiler(int identificador, Alquiler[] alquileres, boolean disponible, int id, Vehiculo datos, String carnet,
-			String dni, int numDias, EstadoCoche estado) {
-		super(identificador, alquileres, disponible);
+	public Alquiler(int identificador, Alquiler[] alquileres, boolean disponible, LocalDate fecharegistro, int id,
+			Vehiculo datos, String carnet, String dni, int numDias, EstadoCoche estado) {
+		super(identificador, alquileres, disponible, fecharegistro);
 		this.id = id;
 		this.datos = datos;
 		this.carnet = carnet;
@@ -74,12 +75,6 @@ public class Alquiler extends Vehiculo {
 	public boolean estaAlquilado() {
 		// TODO Auto-generated method stub
 		return false;
-	}
-
-	@Override
-	public double getPrecioDia() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override

@@ -1,9 +1,0 @@
-package modelo;
-
-public class Clientee extends PersonaRefactoriza {
-	public void comprar() {
-		System.out.println(nombre + " está comprando.");
-	}
-}
-
-// Agregamos más clases para hacer evidente el problema

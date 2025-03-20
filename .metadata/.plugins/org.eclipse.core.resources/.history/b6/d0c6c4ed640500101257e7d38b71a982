@@ -1,0 +1,13 @@
+package simulacroexamen2;
+
+public class Deportistas implements ICompeticion{
+
+	private String nombre;
+	private String pais;
+	private int edad;
+	private double peso;
+	private double altura;
+	private Prueba listapruebas;
+	
+	
+}
