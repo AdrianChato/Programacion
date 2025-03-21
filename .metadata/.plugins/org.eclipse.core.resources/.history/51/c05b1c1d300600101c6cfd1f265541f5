@@ -1,0 +1,13 @@
+package simulacroexamen3;
+
+import java.time.LocalDate;
+
+public class Vuelo {
+
+	private int identificador;
+	private String aerolinea;
+	private String destino;
+	private LocalDate fechavuelo;
+	private int duracion;
+	private EstadoVuelo estado;
+}

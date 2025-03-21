@@ -1,9 +1,9 @@
 package simulacroexamen2;
 
-public class Nadador extends Deportistas {
+public class Nadador extends Deportistas implements ICompeticion{
 
-	public Nadador(String nombre, String pais, int edad, double peso, double altura, Prueba[] listapruebas) {
-		super(nombre, pais, edad, peso, altura, listapruebas);
+	public Nadador(String nombre, String pais, int edad, double peso, double altura) {
+		super(nombre, pais, edad, peso, altura);
 		// TODO Auto-generated constructor stub
 	}
 

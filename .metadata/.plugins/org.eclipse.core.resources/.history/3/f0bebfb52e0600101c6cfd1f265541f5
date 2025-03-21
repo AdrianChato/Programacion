@@ -1,0 +1,6 @@
+package simulacroexamen3;
+
+public enum EstadoVuelo {
+
+	PILOTOCOMERCIAL,PILOTOINTERNACIONAL
+}
