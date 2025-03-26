@@ -1,0 +1,5 @@
+package Modeloexamenejer2;
+
+public interface IRuta {
+
+}

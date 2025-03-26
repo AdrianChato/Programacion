@@ -1,0 +1,19 @@
+package Modeloexamenejer1;
+
+public class MiembroEstandar extends MiembroBase{
+
+	private int maxAmigos;
+
+	public MiembroEstandar(int id, String email, String nombre, int maxAmigos) {
+		super(id, email, nombre);
+		this.maxAmigos = maxAmigos;
+	}
+
+	@Override
+	public String getTipoUsuario() {
+		return "Estandar";
+	}
+
+	
+	
+}

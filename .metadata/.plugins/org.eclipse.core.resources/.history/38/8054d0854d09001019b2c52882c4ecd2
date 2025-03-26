@@ -1,0 +1,15 @@
+package Controladorexamenejer2;
+
+import Modeloexamenejer2.*;
+
+public class GestionaRutas {
+
+	Ciudad c1 = new Ciudad("Sevilla", 6000);
+	Ciudad c2 = new Ciudad("Malaga", 5000);
+	Ciudad c3 = new Ciudad("Jaen", 6700);
+	Ciudad c4 = new Ciudad("Huelva", 9800);
+	Ciudad c5 = new Ciudad("Cadiz", 9900);
+	Ciudad c6 = new Ciudad("Almeria", 1200);
+	
+	RutaTerrestre t1 = new RutaTerrestre(1, "Sevilla", "Cadiz", 65, true);
+}

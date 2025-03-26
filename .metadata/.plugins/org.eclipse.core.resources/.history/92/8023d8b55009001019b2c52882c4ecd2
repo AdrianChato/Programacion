@@ -1,0 +1,5 @@
+package Modeloexamenejer1;
+
+public abstract class MiembroBase {
+
+}
