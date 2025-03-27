@@ -48,4 +48,6 @@
     <fullyQualifiedTypeName name="Modeloexamenejer1.MiembroEstandar"/>
     <fullyQualifiedTypeName name="Modeloexamenejer1.MiembroPremium"/>
     <fullyQualifiedTypeName name="Modeloexamenejer1.GuzmanitosException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
