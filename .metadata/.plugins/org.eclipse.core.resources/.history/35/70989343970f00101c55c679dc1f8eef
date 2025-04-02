@@ -1,0 +1,9 @@
+package modelo;
+
+import java.time.LocalDateTime;
+import java.util.Set;
+
+public class Historial {
+
+	private Set <PaginaWeb> chivato;
+}

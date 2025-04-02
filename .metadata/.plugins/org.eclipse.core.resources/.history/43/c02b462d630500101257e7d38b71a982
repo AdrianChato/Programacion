@@ -1,6 +1,0 @@
-package simulacroexamen2;
-
-public class Deportistas implements ICompeticion{
-
-	
-}
