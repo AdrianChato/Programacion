@@ -1,9 +1,0 @@
-package simulacroexamen2;
-
-public class GestionaDeportistas {
-
-	public static void main(String[] args) {
-		Deportistas c = new Corredor("Juanki", "Rumania", 69, 23541, 183);
-		Prueba p = new Prueba();
-	}
-}

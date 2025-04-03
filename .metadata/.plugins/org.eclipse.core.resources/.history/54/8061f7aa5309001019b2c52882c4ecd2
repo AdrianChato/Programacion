@@ -1,0 +1,101 @@
+package Modeloexamenejer1;
+
+import java.util.Objects;
+
+public abstract class MiembroBase {
+
+	private int id;
+	private String email;
+	private String nombre;
+	private int contadorAmigos;
+	private static int contadoridentificador;
+	protected String [] amigos;
+
+	public MiembroBase(int id, String email, String nombre) {
+		super();
+		this.id = contadoridentificador + 1;
+		this.email = email;
+		this.nombre = nombre;
+		contadoridentificador = contadoridentificador + 1;
+	}
+	
+	public abstract String getTipoUsuario();
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(amigos, contadorAmigos, email, id, nombre);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MiembroBase other = (MiembroBase) obj;
+		return Objects.equals(email, other.email) && id == other.id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getContadorAmigos() {
+		return contadorAmigos;
+	}
+
+	public void setContadorAmigos(int contadorAmigos) {
+		this.contadorAmigos = contadorAmigos;
+	}
+
+	public static int getContadoridentificador() {
+		return contadoridentificador;
+	}
+
+	public static void setContadoridentificador(int contadoridentificador) {
+		MiembroBase.contadoridentificador = contadoridentificador;
+	}
+
+	public String getAmigos() {
+		return amigos;
+	}
+
+	public void setAmigos(String amigos) {
+		this.amigos = amigos;
+	}
+
+	@Override
+	public String toString() {
+		return "MiembroBase [id=" + id + ", email=" + email + ", nombre=" + nombre + "]";
+	}
+	
+	public boolean isAmigo (MiembroBase miembro) {
+		boolean res = false;
+		for (int i = 0; i>amigos.length;i++) {
+			miembro.equals(amigos[i]);
+			res = true;
+	}
+	return res;
+}

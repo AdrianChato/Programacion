@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="herencia.ProfesorInterino"/>
     <fullyQualifiedTypeName name="TareaEvaluable.Administrativo"/>
     <fullyQualifiedTypeName name="EjemploEnum.Ejemplo"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="Solis_Adrian_Examen2.Smartphone"/>
     <fullyQualifiedTypeName name="Solis_Adrian_Examen2.Laptop"/>
     <fullyQualifiedTypeName name="Solis_Adrian_Examen2.PCSobremesa"/>
@@ -36,4 +35,19 @@
     <fullyQualifiedTypeName name="exception.AdrianExcepcion"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="exception.Gestionaexcepcionesejercicio5"/>
+    <fullyQualifiedTypeName name="simulacroexamen2.Corredor"/>
+    <fullyQualifiedTypeName name="simulacroexamen2.Prueba"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="simulacroexamen2.EstadoPrueba"/>
+    <fullyQualifiedTypeName name="simulacroexamen3.Pilotos"/>
+    <fullyQualifiedTypeName name="simulacroexamen3.VueloException"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer2.RutaBase"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer2.Ciudad"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer2.RutaTerrestre"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer2.RutaAerea"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer1.MiembroEstandar"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer1.MiembroPremium"/>
+    <fullyQualifiedTypeName name="Modeloexamenejer1.GuzmanitosException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
