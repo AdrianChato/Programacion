@@ -39,7 +39,7 @@ public class Contacto {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(apellidos, direccion, email, nombre, telefono);
+		return Objects.hash(apellidos,nombre);
 	}
 
 	@Override
@@ -52,9 +52,8 @@ public class Contacto {
 			return false;
 
 		Contacto other = (Contacto) obj;
-		return Objects.equals(apellidos, other.apellidos) && Objects.equals(direccion, other.direccion)
-				&& Objects.equals(email, other.email) && Objects.equals(nombre, other.nombre)
-				&& Objects.equals(telefono, other.telefono);
+		return Objects.equals(apellidos, other.apellidos) && Objects.equals(nombre, other.nombre)
+				;
 	}
 
 

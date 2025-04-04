@@ -1,0 +1,44 @@
+package controlador;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import modelo.AgendaMapa;
+import modelo.Contacto;
+
+public class GestionaAgendaMapa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Contacto c1 = new Contacto("Jc", "Rallas", "elviejito@email.com", "Calle 123", "123456789");
+		Contacto c2 = new Contacto("Jcrth", "tryjh", "elviedryjjito@email.com", "Calle 1dfgj23", "123rtuj456789");
+		Contacto c3 = new Contacto("Jcdjry", "Rartjhllas", "elfgjviejito@email.com", "Calfgjle 123", "1234rtu56789");
+		
+		AgendaMapa a = new AgendaMapa();
+		
+		a.getAgenda().put("wau", c1);
+		a.getAgenda().put("waretyu", c2);
+		a.getAgenda().put("waebtgu", c3);
+		
+		a.getAgenda().put("waebtgu", c1);
+		System.out.println(a.getAgenda().size());
+		 
+		
+		System.out.println(a.getAgenda().get("waretyu"));
+		
+		System.out.println(a.getAgenda().values());
+		System.out.println(a.getAgenda().keySet());
+		
+		Set<Map.Entry <String,Contacto>> entrada = a.getAgenda().entrySet();
+		Entry <String,Contacto> elemento;
+		Iterator it = entrada.iterator();
+		while(it.hasNext()) {
+			elemento = (Entry<String, Contacto>) it.next();
+			elemento.getKey();
+			elemento.getValue();
+		}
+	}
+
+}
