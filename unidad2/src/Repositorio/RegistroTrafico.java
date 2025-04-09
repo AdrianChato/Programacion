@@ -1,4 +1,4 @@
-package repositorio;
+package Repositorio;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,7 +11,7 @@ import modelo.Vehiculo;
 import java.util.Map.Entry;
 
 public class RegistroTrafico {
-	private HashMap<String, Vehiculo> vehiculos;
+	private HashMap<Vehiculo> vehiculos;
 
 	public HashMap<String, Vehiculo> getVehiculos() {
 		return vehiculos;
