@@ -76,8 +76,7 @@ public class Vehiculo implements Comparable<Vehiculo> {
 	}
 	@Override
 	public int compareTo(Vehiculo o) {
-		int comparable = this.num_bastidor.compareTo(o.getNum_bastidor());
-		return comparable;
+		return this.num_bastidor.compareTo(o.getNum_bastidor());
 	}
 	@Override
 	public String toString() {
