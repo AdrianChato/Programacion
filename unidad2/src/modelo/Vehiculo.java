@@ -3,7 +3,7 @@ package modelo;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Vehiculo implements Comparable<Vehiculo> {
+public class Vehiculo {
 	
 	private String num_bastidor;
 	private String num_matricula;
@@ -75,13 +75,10 @@ public class Vehiculo implements Comparable<Vehiculo> {
 		return Objects.equals(num_bastidor, other.num_bastidor);
 	}
 	@Override
-	public int compareTo(Vehiculo o) {
-		return this.num_bastidor.compareTo(o.getNum_bastidor());
-	}
-	@Override
 	public String toString() {
 		return "Vehiculo [num_bastidor=" + num_bastidor + ", num_matricula=" + num_matricula + ", marca=" + marca
 				+ ", modelo=" + modelo + ", anio_fabricacion=" + anio_fabricacion + ", propietario_actual="
 				+ propietario_actual + "]";
 	}
+
 }

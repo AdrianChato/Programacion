@@ -1,7 +1,8 @@
-package repositorio;
+package Repositorio;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -28,7 +29,7 @@ public class RegistroTrafico {
 
 	public RegistroTrafico(HashMap<Rematriculacion, Vehiculo> vehiculos) {
 		super();
-		this.vehiculos = new HashMap<Rematriculacion, Vehiculo>(); // (vehiculos)
+		this.vehiculos = new HashMap<Rematriculacion, Vehiculo>();
 	}
 
 	public boolean agregarVehiculo(Rematriculacion r, Vehiculo v) {
@@ -42,7 +43,7 @@ public class RegistroTrafico {
 		return registrado;
 	}
 
-	RegistroTrafico l;
+	RegistroTrafico p;
 
 	public boolean registrarRematriculacion(Rematriculacion r) {
 		boolean rematriculado = false;
@@ -50,7 +51,7 @@ public class RegistroTrafico {
 				&& vehiculos.containsKey(r.getFecha_matriculacion())) {
 			rematriculado = true;
 		} else {
-			l.agregarVehiculo(null, null);
+			p.agregarVehiculo(null, null);
 		}
 		return rematriculado;
 	}
@@ -67,33 +68,4 @@ public class RegistroTrafico {
 		return encontrado;
 	}
 
-	public void mostrarVehiculosAñoMatric(Vehiculo v, Rematriculacion fecha) {
-		Map<Rematriculacion, Vehiculo> entrada = new HashMap<>();
-		Set<Map.Entry<Rematriculacion, Vehiculo>> entradas = entrada.entrySet();
-		Entry<Rematriculacion, Vehiculo> elemento;
-		Iterator it = entradas.iterator();
-
-		while (it.hasNext()) {
-			elemento = (Entry<Rematriculacion, Vehiculo>) it.next();
-			if (elemento.getValue().getAño_fabricacion() != null) {
-				System.out.println(elemento);
-			}
-		}
 	}
-
-	Rematriculacion r;
-
-	public void mostrarRematriculacionVehiculo(Vehiculo v) {
-		Map<Rematriculacion, Vehiculo> entrada = new HashMap<>();
-		Set<Map.Entry<Rematriculacion, Vehiculo>> entradas = entrada.entrySet();
-		Entry<Rematriculacion, Vehiculo> elemento;
-		Iterator it = entradas.iterator();
-
-		while (it.hasNext()) {
-			elemento = (Entry<Rematriculacion, Vehiculo>) it.next();
-			if (elemento.getValue().toString() != null) {
-				System.out.println(elemento);
-			}
-		}
-	}
-}
