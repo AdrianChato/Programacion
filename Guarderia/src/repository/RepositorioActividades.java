@@ -15,7 +15,7 @@ public class RepositorioActividades {
 	public RepositorioActividades() {
 		super();
 		this.activididades = new HashSet<Actividad>();
-		// Uso un HashSet porque no puedo tener repetidos ni me dice que guarde ordenado
+		//Uso un hashset porque no repetidos y no me dicen que guarde ordenado
 	}
 
 	public Collection<Actividad> getActivididades() {
@@ -28,13 +28,26 @@ public class RepositorioActividades {
 	
 	public boolean isAlumnoApuntado(String nombreActividad, LocalDate fechaActividad, Alumno a) throws GuarderiaException {
 		boolean esta = false;
-		// TODO
+		
+		for (Actividad actividad : activididades) {
+			if(actividad.getNombre().equals(nombreActividad) && actividad.getFecha().equals(fechaActividad) ) {
+				actividad.participaAlumnoEnActividad(a);
+				esta = true;
+			}
+		}
 
 		return esta;
 	}
 
 	public void agregarAlumnoActividad(String nombreActividad, LocalDate fechaActividad, Alumno a)
 			throws GuarderiaException {
+		
+			for (Actividad actividad : activididades) {
+				if(actividad.getNombre().equals(nombreActividad) && actividad.getFecha().equals(fechaActividad)) {
+					actividad.agregarAlumno(a);
+				}
+			}
+		
 		// TODO
 
 	}

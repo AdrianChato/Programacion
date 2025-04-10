@@ -1,5 +1,5 @@
 package models;
-public enum Lugar  {
+public enum Lugar {
     AULA,
     PATIO,
     COMEDOR,

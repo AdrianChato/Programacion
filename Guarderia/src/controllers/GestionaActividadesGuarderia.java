@@ -1,16 +1,16 @@
 package controllers;
 
-import repository.RepositorioActividades;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.TreeSet;
 
 import exceptions.GuarderiaException;
-import models.*;
+import models.Actividad;
+import models.Alumno;
+import models.Lugar;
+import models.Maestro;
+import repository.RepositorioActividades;
 
 public class GestionaActividadesGuarderia {
 
@@ -64,29 +64,31 @@ public class GestionaActividadesGuarderia {
 		System.out.println(g.isAlumnoApuntado("Pintuas", LocalDate.now().plusDays(10), alumno5));
 		
 		List<Alumno> alumnos1 = actividades.getAlumnadoConAlergias("Pintura con dedos", LocalDate.now());
-		for(Alumno a: alumnos1)
-		{
-			System.out.println(a);
+		if (alumnos1 != null) {
+			for (Alumno a : alumnos1) {
+				System.out.println(a);
+			}
 		}
-		
 		alumnos1 = actividades.getAlumnadoConAlergias("Pintura ", LocalDate.now());
-		for(Alumno a: alumnos1)
-		{
-			System.out.println(a);
+		if (alumnos1 != null) {
+			for (Alumno a : alumnos1) {
+				System.out.println(a);
+			}
 		}
-		
+
 		List<Actividad> actividadesOrd = actividades.getListaActividades();
-		for(Actividad a: actividadesOrd)
-		{
-			System.out.println(a);
+		if (actividadesOrd != null) {
+			for (Actividad a : actividadesOrd) {
+				System.out.println(a);
+			}
 		}
-		
 		
 		///////////////////////////////////////////////////////////////////
 		/*
 		 * Utiliza este espacio si necesitas hacer pruebas propias
 		 */
 		//////////////////////////////////////////////////////////////////////
+		
 		
 
 	}
@@ -95,6 +97,13 @@ public class GestionaActividadesGuarderia {
 	{
 		boolean agregado = false;
 		//TODO
+		
+		try {
+			actividad.agregarAlumno(a);
+		} catch (GuarderiaException e) {
+			System.out.println(e.getMessage());
+		}
+		
 		return agregado;
 	}
 	
@@ -102,6 +111,7 @@ public class GestionaActividadesGuarderia {
 	{
 		boolean esta = false;
 		//TODO
+		
 		return esta;
 	}
 }

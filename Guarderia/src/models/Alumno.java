@@ -1,6 +1,7 @@
 package models;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Alumno {
 	private int id;
@@ -24,6 +25,8 @@ public static int numeroAlumnos;
 		this.alergias = alergias;
 		this.autorizaImagenes = autorizaImagenes;
 		this.maestro = maestro;
+		this.id = id+numeroAlumnos;
+		numeroAlumnos = numeroAlumnos+1;
 		//TODO Asignar id autogenerado
 	}
 	public String getNombre() {
@@ -68,6 +71,22 @@ public static int numeroAlumnos;
 	public void setMaestro(Maestro maestro) {
 		this.maestro = maestro;
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(apellidos, nombre);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Alumno other = (Alumno) obj;
+		return Objects.equals(apellidos, other.apellidos) && Objects.equals(nombre, other.nombre);
+	}
     
+	
     
 }

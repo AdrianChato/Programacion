@@ -1,10 +1,10 @@
 package models;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 import exceptions.GuarderiaException;
 
@@ -15,8 +15,8 @@ public class Actividad {
     private int edadRecomendada;
     private int maxAlumnos;
     private Maestro maestro;
-    private Set <Alumno> alumnos;
-   // TODO Define atributo con estructura de datos para almacenar alumnos de la actividad
+
+    private Collection <Alumno> alumnos; //TODO Decide qué estructura de datos
 
     public Actividad(String nombre, Lugar lugar, int edadRecomendada, int maxAlumnos,  Maestro maestro, LocalDate fecha) {
         this.nombre = nombre;
@@ -26,12 +26,26 @@ public class Actividad {
         this.maxAlumnos = maxAlumnos;
         this.maestro = maestro;
         this.alumnos = new HashSet<Alumno>();
-       // this.alumnos = TODO
+       // this.alumnos = new H
     }
 
     public boolean agregarAlumno(Alumno alumno) throws GuarderiaException{
        boolean agregado = false;
        //TODO
+       
+       if(alumnos.size() >= maxAlumnos) {
+    	   agregado = false;
+    	   throw new GuarderiaException("Máximo alumnos, no caben más");
+       }
+       else if(alumno.getEdad() < edadRecomendada) {
+    	   agregado = false;
+    	   throw new GuarderiaException("El alumno no tiene la edad recomendada para la actividad");
+       }
+       else {
+    	   alumnos.add(alumno);
+    	   agregado = true;
+       }
+       
        return agregado;
     }
     
@@ -42,9 +56,14 @@ public class Actividad {
     	return alumnadoAlergia;
     }
     
-    public boolean participaAlumnoEnActividad()
+    public boolean participaAlumnoEnActividad(Alumno a)
     {
     	boolean participa = false;
+    	
+    	if(alumnos.contains(a)) {
+    		participa = true;
+    	}
+    	
     	//TODO
     	return participa;
     }
@@ -116,4 +135,31 @@ public class Actividad {
 		return Objects.equals(fecha, other.fecha) && Objects.equals(nombre, other.nombre);
 	}
 	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
